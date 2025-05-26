@@ -1,0 +1,2 @@
+/home/thr00n3r/Documents/CodingProject/ProjectFlutter/Telkom-Projects/MediList/android/app/.cxx/Debug/4t5k1a6e/x86/CMakeFiles/rebuild_cache.dir
+/home/thr00n3r/Documents/CodingProject/ProjectFlutter/Telkom-Projects/MediList/android/app/.cxx/Debug/4t5k1a6e/x86/CMakeFiles/edit_cache.dir

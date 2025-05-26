@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:medilist/views/add_produk.dart';
-import 'package:medilist/views/add_supplier.dart';
-import 'package:medilist/views/dashboard.dart';
-import 'package:medilist/views/login.dart';
-import 'package:medilist/views/signup.dart';
-import 'package:medilist/views/splashscreen.dart';
-
+import 'package:medilist/pages/produk/produk-page.dart';
+import 'package:medilist/pages/supplier/supplier-page.dart';
+import 'package:medilist/pages/dashboard/dashboard.dart';
+import 'package:medilist/pages/auth/login.dart';
+import 'package:medilist/pages/auth/signup.dart';
+import 'package:medilist/pages/splash-screen/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +13,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -22,14 +20,13 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: 'splash',
       routes: {
-        'splash': (_) => Splashscreen(), 
-        'login': (_) => Loginpage(),
-        'dashboard': (_) => SalesSummaryPage(),
-        'signup': (_) => SignUpPage(),
-        'supplier': (_) => SupplierPage(),
-        'produk': (_) => produk(),
-
-        }
+        'splash': (_) => const Splashscreen(),
+        'login': (context) => const Loginpage(),
+        'dashboard': (context) => const SalesSummaryPage(),
+        'signup': (context) => const SignUpPage(),
+        'supplier': (_) => const SupplierPage(),
+        'produk': (_) => const ProductPage(),
+      },
     );
   }
 }
